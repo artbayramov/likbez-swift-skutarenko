@@ -23,7 +23,6 @@ func propertyType() {
             case Top
             case Bottom
         }
-        Direction.enumDescription
         
         struct Cat {
             var name: String
@@ -39,7 +38,7 @@ func propertyType() {
             init(name:String,age:Int) {
                 self.name = name
                 self.age = age
-                Cat.totalCats + 1
+                print(Cat.totalCats + 1)
             }
         }
         
@@ -48,8 +47,8 @@ func propertyType() {
         human.age = 1000
         cat.age = 50
         print(Cat.totalCats)
-        var cat1 = Cat(name: "Whiten1", age: 10)
-        var cat2 = Cat(name: "Whiten2", age: 10)
+        //var cat1 = Cat(name: "Whiten1", age: 10)
+        //var cat2 = Cat(name: "Whiten2", age: 10)
         print(Cat.totalCats)
         }
 }

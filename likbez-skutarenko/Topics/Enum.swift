@@ -13,11 +13,14 @@ func Enum() {
             case Turn(direction: Direction)
         }
         //Ассоциативные значения применяются
+        /*
         var action = Action.Run(meters: 20, speed: 15)
         action = .Stop
         action = .Walk(meters:10)
         action = .Turn(direction: .Left)
-        switch action {
+        */
+        /*
+        switch action.self {
         case .Stop: print("Stop")
         case .Walk(let meter):
             print("Walk \(meter) meters")
@@ -29,4 +32,7 @@ func Enum() {
             break
         }
     }
+}
+*/
+}
 }

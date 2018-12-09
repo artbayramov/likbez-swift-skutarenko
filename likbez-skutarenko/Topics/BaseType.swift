@@ -7,6 +7,8 @@ func baseType() {
         let hex    = 0xff
         let binary = 0b11111111
         
+        print(number + hex + binary) //компилятор считает что тип Int
+        
         print(Int8.min)
         print(Int8.max)
         print(UInt8.min)
@@ -25,15 +27,19 @@ func baseType() {
         let a: Artur = 5
         let b = 5.3
         
-        let c = a + Artur(b)
+        let _ = a + Artur(b)
         
-        let d = false
+        var d: Bool = false
+        d = true
+        let e = d
+        //var d == true ? "Hey" : "Bye"
+        print(e)
         
-        if d {
-            print("Hey")
-        } else {
-            print ("Bye")
-        }
+//        if d {
+//            print("Hey")
+//        } else {
+//            print("Bye")
+//        }
 
     }
 }

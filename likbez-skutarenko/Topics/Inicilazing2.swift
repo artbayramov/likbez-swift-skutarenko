@@ -45,7 +45,7 @@ func inicilazing2() {
                 super.init(firstName: "Doctor", lastName: "House")
             }
         }
-        let d1 = Doctor (feildOfStudy: "aaaa")
-        let d2 = Doctor (feildOfStudy:  "" )
+       // let d1 = Doctor (feildOfStudy: "aaaa")
+       // let d2 = Doctor (feildOfStudy:  "" )
         }
 }

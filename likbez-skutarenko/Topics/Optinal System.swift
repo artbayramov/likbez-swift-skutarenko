@@ -30,7 +30,7 @@ func optinalSystem() {
         }
         let p = Person()
         if let house = p.house {
-            if let garage = house.garage{
+            if house.garage != nil{
             }
         }
    }

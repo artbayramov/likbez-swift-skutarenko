@@ -1,6 +1,8 @@
-    protocol EntryName {
-        var label: String { get }         //любой тип должен иметь гет или сет
-    }
+
+protocol EntryName {
+    var label: String { get }         //любой тип должен иметь гет или сет
+}
+    
 func protocolTest() {
     test(topic: "Protocol") {
         //Протоколы - это (супер важная тема) они для того что бы обеспечить общения разных обьъктов интерфейса.

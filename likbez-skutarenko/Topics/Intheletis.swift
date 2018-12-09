@@ -19,7 +19,7 @@ func intheletis() {
         let human = Human()
         human.firstName = "Alex"
         human.lastName = "Skutarenko"
-        human.sayHello()
+        print(human.sayHello())
         
         class Student : Human {   // наследует от класса хьюман
             override func sayHello() -> String {
@@ -29,7 +29,7 @@ func intheletis() {
         let student = Student()
         student.firstName = "Max"
         student.lastName = "Mix"
-        student.sayHello()
+        print(student.sayHello())
         
         class Kid: Human {
             override func sayHello() -> String {
@@ -38,7 +38,7 @@ func intheletis() {
         }
         let kid = Kid()
         kid.firstName = "Artur"
-        kid.sayHello()
+        print(kid.sayHello())
         //Наследование очень важная штука!!!
         }
 }

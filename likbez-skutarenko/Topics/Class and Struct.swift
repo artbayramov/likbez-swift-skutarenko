@@ -40,18 +40,18 @@ func ClassAndStruct() {
         
         let stStruct1 = StudentStruct(name: "Sam", age: 24)
         
-        stStruct1
+        print(stStruct1)
         var stStruct2 = stStruct1
         stStruct2.age = 25
         stStruct2.name = "SAV"
-        stStruct1     // происходит процесс копирования
+        print(stStruct1)     // происходит процесс копирования
         print(stStruct2)   //экземпляр стурктуры который сохранил свои значения, но в классах все наоборот
         
         
-        var stClass2 = stClass1
+        let stClass2 = stClass1
         stClass2.age = 20
         stClass2.name = "AAA"
-        stClass1                //сдезь мы не копируем объект, а создаем указател
+        print(stClass1)                //сдезь мы не копируем объект, а создаем указател
         
         var arrayStructs = [stStruct1]
         print(arrayStructs[0])

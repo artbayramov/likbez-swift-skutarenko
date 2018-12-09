@@ -4,7 +4,7 @@ func ARC() {
     test(topic: "ARC") {
 
         //АРС - это очень важная понимать, чтобы понимать.
-        var playground = true
+        let playground = true
         class Student {
             deinit {
                 print ("goodbye student")
@@ -16,8 +16,8 @@ func ARC() {
             }
         }
         if playground {
-            var student = Student()
-            var teacher = Teacher()
+            _ = Student()
+            _ = Teacher()
             print("exit playground")
         }
         print ("end")
@@ -25,18 +25,18 @@ func ARC() {
         //Clouser
         var x = 10
         var y = 20
-        var clouser: () -> () = {
+        var _: () -> () = {
             [x,y] in
             print("\(x) \(y)")
         }
-        var clouser2 : (Int) -> Int = { [x,y] (a:Int) -> Int in
+        let clouser2 : (Int) -> Int = { [x,y] (a:Int) -> Int in
             print("\(x) \(y)")
             return x
         }
         
-        clouser2(1)
+        print(clouser2(1))
         x = 30
         y = 40
-        clouser2(2)
-        }
+        print(clouser2(2))
+    }
 }

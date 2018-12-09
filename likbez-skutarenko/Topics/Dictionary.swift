@@ -8,16 +8,16 @@ func dictionary() {
         //let dict2:[Int:String] = [0 : "car", 1 : "man"]
         
         var dict : [String:String] = ["машина" : "car", "мужик" : "man"]
-        dict.count
-        dict.isEmpty
+        print(dict.count)
+        print(dict.isEmpty)
         
-        var dict3 = [String(),String()]
-        dict3.count     //кол-во элементов
-        dict3.isEmpty   // пустой или нет
+        let dict3 = [String(),String()]
+        print(dict3.count)     //кол-во элементов
+        print(dict3.isEmpty)   // пустой или нет
         
         dict["комп"] = "computer"    //добавили компутер
-        dict.keys.description
-        dict.values.description
+        print(dict.keys.description)
+        print(dict.values.description)
         
         //dict["комп"] = "mac"      // замена ключа комп на mac
         print(dict)

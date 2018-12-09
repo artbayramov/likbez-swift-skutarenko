@@ -39,6 +39,5 @@ func Method() {
                 }
             }
         }
-        var c = Color.White
-        }
+   }
 }

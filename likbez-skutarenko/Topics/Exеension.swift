@@ -33,7 +33,7 @@ extension Int {    // это есть расширение
     
     var binaryString : String{
         var result = ""
-        for i in 0..<8 {
+        for _ in 0..<8 {
             result = ""
         }
         return result
@@ -75,13 +75,13 @@ func extensionTest() {
         print(a)
         a.powTo(value: 4)
         a = 1
-        a.binaryString
+        print(a.binaryString)
         
         
         let  s = "Hello, World!"
         String()
-        let start = s.startIndex
-        let end = s.startIndex
+        _ = s.startIndex
+        _ = s.startIndex
 
         }
 }

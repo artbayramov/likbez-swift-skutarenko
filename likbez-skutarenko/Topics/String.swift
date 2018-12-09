@@ -15,18 +15,24 @@ func String() {
          */
         var str1 = "a"
         var str2 = "bm"
-        str1 = ""
+        str1 = "fuck"
         print(str1)
         print(str2)
-        str1.isEmpty
+        print(str1.isEmpty)
+        
+        
         let char1: Character = "w"
         for c in "Hello World!" {
             print (c)
         }
+        
+        
         str2.append(char1)
-        (str2 as NSString).length
+        print((str2 as NSString).length)
         //unicod
         let heart = "\u{1F496}"
-        var fun: Character = "Ъ"
+        let fun: Character = "Ъ"
+        
+        print("\(heart)", "\(fun)")
         }
 }

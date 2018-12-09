@@ -41,10 +41,10 @@ func inicilazing1() {
             }
         }
         
-        let s1 = Student1()
-        let s2 = Student2()
-        let s3 = Student3(firstName: "a", lastName: "b")
-        let s5 = Student5()
+        _ = Student1()
+        _ = Student2()
+        _ = Student3(firstName: "a", lastName: "b")
+        _ = Student5()
         
         //дезикнем методы - главные инициализаторы,
         // конвинекс методы - модет ставить деволтные значения
@@ -67,9 +67,9 @@ func inicilazing1() {
             }
         }
         //init -  это десигнейт инициализатор
-        let h1 = Human(weight: 70, age: 25)
-        let h2 = Human(age: 25)
-        let h4 = Human()
+        _ = Human(weight: 70, age: 25)
+        _ = Human(age: 25)
+        _ = Human()
         
         class Student: Human {
             var firstName : String

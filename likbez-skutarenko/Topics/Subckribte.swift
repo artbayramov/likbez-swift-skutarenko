@@ -6,9 +6,9 @@ func Subscript() {
         //Subckribts
         //Сабскрипт это обращение нашаего экземеплря к массивчику  по индексу
         let array = ["a","b","c"]
-        array [0]
-        array [1]
-        array [2]
+        print(array [0])
+        print(array [1])
+        print(array [2])
         struct Family {
             var father = "Father"
             var mother = "Mohter"
@@ -27,13 +27,10 @@ func Subscript() {
                 }
             }
         }
-        var family = Family()
+        let family = Family()
         print(family.father)
         print(family.mother)
-        family.count
-        family[0]
-        family[1]
-        family[2]
+        print(family.count)
         
         /*struct Field {
          subscript (column: String, row: Int) -> String? {

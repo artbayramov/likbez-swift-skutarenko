@@ -14,7 +14,7 @@ func inicilazing3() {
                 }
             }
         }
-        let a = Color(1)
+        _ = Color(1)
         //let b = Color(rawValue: 1)
         
         struct Size {
@@ -23,11 +23,11 @@ func inicilazing3() {
             
             init?(width:Int, heigt: Int) {
                 return nil
-                self.width = width
-                if height < 0 {
-                    return nil
+              // self.width = width
+              //  if height < 0 {
+              //      return nil
                 }
-                print(self.height)
+              //  print(self.height)
             }
         }
         class Friend {
@@ -39,7 +39,7 @@ func inicilazing3() {
                 self.name = name
             }
         }
-        let f = Friend(name: "")
+        _ = Friend(name: "")
         
         class BestFriend: Friend {
             override init?(name: String){
@@ -51,4 +51,3 @@ func inicilazing3() {
             }
         }
     }
-}

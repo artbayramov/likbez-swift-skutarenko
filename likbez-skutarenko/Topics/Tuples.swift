@@ -3,7 +3,7 @@
 /*
     Туплы - группа значение объединенных в одну перемменную
  
- */
+*/
 
 func tuples() {
     
@@ -31,7 +31,7 @@ func tuples() {
         let (redColor, greenColor, blueColor) = ("red", "green", "blue")
         
         print(redColor)
-        print(blueColor)
+        print(blueColor + greenColor)
         
         let totalNumber = 5
         let Name = "Artur"

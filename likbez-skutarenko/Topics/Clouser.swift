@@ -19,15 +19,14 @@ func clouser () {
          }
          */
         
-        filterArre (array: numbers,f: {(i:Int)-> Bool in
-            return i % 2 == 0
-        })
+//        filterArre (array: numbers, f: {(i:Int)-> Bool in
+//            return i % 2 == 0
+//        })
         //MARK:TODO
         //Клоужеры уменьшают кол-во строк
         var count = 0
         let array = [1,2,3]
-        let  a1 =
-            filterArre(array: numbers) {value in
+        _ = filterArre(array: numbers) {value in
                 for include in array {
                     count = count+1
                     if include == value {
@@ -36,6 +35,7 @@ func clouser () {
                 }
                 return false
         }
-       numbers.count
+       print(numbers.count)
+
 }
 }

@@ -26,13 +26,13 @@ func function() {
             }
             return sum
         }
-        calculateMoney(inSequence : 5,5,10,2,3,4,4,23,24,34)
+        print(calculateMoney(inSequence : 5,5,10,2,3,4,4,23,24,34))
         
         var wallet = [100,5, 1, 5, 5, 20, 50, 100, 1, 1,]
         let (money, count) = calculateMoney (wallet: &wallet, type: 1)
-        money
-        count
-        calculateMoney(wallet: &wallet, type: 5)
+        print(money)
+        print(count)
+        print(calculateMoney(wallet: &wallet, type: 5))
         
         func sayHi() -> () {
             print ("Hi")
@@ -44,9 +44,9 @@ func function() {
             print(phrase)
             return nil
         }
-        sayPhrase(phrase: "aaa")
-        let phrase:(String) -> (Int?) = sayPhrase
-        phrase("bbb")
+        print(sayPhrase(phrase: "aaa") as Any)
+        let phrase: (String) -> (Int?) = sayPhrase
+        print(phrase("bbb") as Any)
         
         func doSomething(whatToDo:@escaping ()->()) {
             
